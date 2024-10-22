@@ -1,8 +1,7 @@
 
 
 // - Crea una funcion que reciba una palabra, si la palabra tiene más de 5 caracteres la imprimirá en mayúsculas, si no en minúsculas.
-
-function exercise (word){
+const exercise = word =>{
 
     if (word.length > 5) {
         return word.toUpperCase()
@@ -11,13 +10,12 @@ function exercise (word){
     return word.toLowerCase()
 }
 
-console.log(exercise ('esternocleidomastoideo'));
+console.log(exercise ('mastodonte'));
 
 
 // Crea una función que reciba una palabra e imprime por consola una letra aleatoria de esa palabra.
 
-
-function exercise2(word) {
+const exercise2 = word => {
     const random = Math.floor(Math.random() * word.length);
     console.log(word.charAt(random));
 }
@@ -28,7 +26,7 @@ exercise2 ('crema')
 
 // Crea una función que reciba dos palabras y devuelva cuál de las dos es más larga. Si ambas palabras tienen la misma longitud, deberá indicarlo.
 
-function exercise3 (word1, word2){
+const exercise3 = (word1,word2) =>{
     if (word1.length > word2.length){
         console.log (word1)
     }
